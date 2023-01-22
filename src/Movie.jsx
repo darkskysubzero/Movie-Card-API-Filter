@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const Movie = ({ data }) => {
     return (
         <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, }}
+            animate={{ opacity: 1, transition: { duration: 1, ease: "easeIn" } }}
+            exit={{ opacity: 0, }}
             layout
             className='movie'>
             <h2>{data.title}</h2>
